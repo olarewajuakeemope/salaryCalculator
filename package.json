@@ -1,0 +1,19 @@
+{
+  "name": "salcal",
+  "version": "1.0.0",
+  "description": "A company needs your help making their process of calculating employee salaries easier. They have 5 types of employees; Interns, Associates, Managers, Executives and Directors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweethat/SalaryCal.git"
+  },
+  "author": "Olarewaju Opeyemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tweethat/SalaryCal/issues"
+  },
+  "homepage": "https://github.com/tweethat/SalaryCal#readme"
+}
