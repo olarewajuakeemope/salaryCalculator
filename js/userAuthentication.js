@@ -13,8 +13,37 @@ function userAuthentication(form) { //to be edited
 }
 
 function employeeAdder(form) {
+   //define employers list
+   //add to the list
+   var level = form.level.value;
+   var employees;
+   if(localStorage.getItem('employees')) {
+     employees = JSON.parse(localStorage.getItem('employees'));
+   }
+   else {
+     employees = [];
+   }
+   
+   var newEmployee = {
+   	  name : form.name.value,
+   	  level : level
+   }
 
-    $.getJSON("js/user.json", function(user) {
-    user.interns.push("hello");
-  })
+   $.getJSON("js/salary.json", function(salary) {
+       newEmployee.salary = salary[level];
+       employees.push(newEmployee);
+       localStorage.setItem('employees', JSON.stringify(employees));
+   })
+   
+
+}
+
+
+function getEmployeeDetails(level) {
+   if(localStorage.getItem('employees')) {
+      employees = JSON.parse(localStorage.getItem('employees'));
+   }
+   else {
+      employees = [];
+   }
 }
