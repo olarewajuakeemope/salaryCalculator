@@ -1,6 +1,7 @@
 {
-  "Directors": "20000",
-  "Executives": "400000",
-  "Managers": "50000",
-  "Associates": "10000"
+  "Directors": {"basic_salary": "20000", "housing_allowance": "1000", "health_allowance": "500", "monthly_allowance": "750", "transport_allowance": "1500", "total_salary": "23750"},
+  "Executives": {"basic_salary": "30000", "housing_allowance": "1200", "health_allowance": "600", "monthly_allowance": "760", "transport_allowance": "1500", "total_salary": "34260"},
+  "Managers": {"basic_salary": "40000", "housing_allowance": "1300", "health_allowance": "700", "monthly_allowance": "770", "transport_allowance": "1500", "total_salary": "44270"},
+  "Associates": {"basic_salary": "25000", "housing_allowance": "none", "health_allowance": "none", "monthly_allowance": "none", "transport_allowance": "1500", "total_salary": "26500"},
+  "Interns": {"basic_salary": "10000", "housing_allowance": "none", "health_allowance": "none", "monthly_allowance": "none", "transport_allowance": "none", "total_salary": "10000"}
 }

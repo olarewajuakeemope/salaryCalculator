@@ -1,11 +1,11 @@
-<! DOCTYPe html>
+<!DOCTYPE html>
 <html>Salary Calculator
 
 <head>
 <title>Text Input Control</title>
 </head>
 <body>
-<form>Addnew Employee <input type="text" name="name" />
+<form>New Employee name: <input type="text" name="name" />
 <br>
 
 <select name="level">
@@ -16,7 +16,33 @@
 <option value="Interns">Interns</option>
 </select>
 <input type="button" value="submit" onClick="employeeAdder(this.form);">
-</form>
+</form><br><br>
+
+<div>
+
+   <form>
+	<input type="button" value="Show List of Directors" onClick="showEmployees('Directors');"><br>
+   </form>
+
+   <form>
+	<input type="button" value="Show List of Executives" onClick="showEmployees('Executives');"><br>
+   </form>
+
+   <form>
+	<input type="button" value="Show List of Managers" onClick="showEmployees('Managers');"><br>
+   </form>
+
+   <form>
+	<input type="button" value="Show List of Associates" onClick="showEmployees('Associate');"><br>
+   </form>
+
+   <form>
+	<input type="button" value="Show List of Interns" onClick="showEmployees('Interns');"><br>
+   </form>
+
+</div><br>
+<span id="display" style="text-align: center;"></span><br>
+<span id="show" style="text-align: center;"></span>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/userAuthentication.js"></script>
 
