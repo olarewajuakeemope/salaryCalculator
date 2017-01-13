@@ -34,7 +34,7 @@ function employeeAdder(form) {
     localStorage.setItem('employees', JSON.stringify(employees));
   })
 
-
+$("#register").val("");
 }
 
 

@@ -5,14 +5,14 @@
 <title>Text Input Control</title>
 </head>
 <body>
-<form>New Employee name: <input type="text" name="name" />
+<form>New Employee name: <input id="register" type="text" name="name" />
 <br>
 
 <select name="level">
 <option value="Directors">Directors</option>
 <option value="Executives">Executives</option>
 <option value="Managers">Managers</option>
-<option value="Associate">Associates</option>
+<option value="Associates">Associates</option>
 <option value="Interns">Interns</option>
 </select>
 <input type="button" value="submit" onClick="employeeAdder(this.form);">
@@ -33,7 +33,7 @@
    </form>
 
    <form>
-	<input type="button" value="Show List of Associates" onClick="showEmployees('Associate');"><br>
+	<input type="button" value="Show List of Associates" onClick="showEmployees('Associates');"><br>
    </form>
 
    <form>
